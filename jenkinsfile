@@ -5,11 +5,11 @@ pipeline {
         terraform 'tf'
     }
     environment {
-        IMAGE_NAME = "ethantechtorial/java-app:java-maven-${BUILD_NUMBER}"
+        IMAGE_NAME = "gary342022/java-app-tf:java-maven-${BUILD_NUMBER}"
     }
     stages {
     
-         stage('test') {
+         stage('test') { 
             steps {
                 script {
                     echo "test the application"
